@@ -1,6 +1,6 @@
 #include <stdio.h>
-#include "dtc.h"
-void Set_DTC(void)
+void DTC_Process(float torque,float flow)
 {
-    printf("DTC Triggered\n");
+    if(torque<20) printf("DTC Torque Fault\n");
+    if(flow<50) printf("DTC Flow Fault\n");
 }

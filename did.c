@@ -1,6 +1,5 @@
 #include <stdio.h>
-#include "did.h"
-void Update_DID(float speed)
+void DID_Process(float torque,float flow)
 {
-    printf("DID Updated : %.2f\n", speed);
+    printf("DID Torque=%.2f Flow=%.2f\n",torque,flow);
 }
